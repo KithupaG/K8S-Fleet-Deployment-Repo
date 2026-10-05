@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+images:
+  - name: harbor.192.168.56.50.com/hercey/jboss-app
+    newTag: "1.0.0"

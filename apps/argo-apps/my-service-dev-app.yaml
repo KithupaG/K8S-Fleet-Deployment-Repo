@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/KithupaG/K8S-Fleet-Deployment-Repo.git'
     targetRevision: HEAD
-    path: apps/my-service/overlays/dev
+    path: ../apps/service/overlays/dev
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: dev
