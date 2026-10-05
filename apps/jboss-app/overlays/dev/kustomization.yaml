@@ -5,5 +5,5 @@ resources:
   - ../../base
 
 images:
-  - name: harbor.192.168.56.50.com/hercey/jboss-app
+  - name: 192.168.56.50/hercey/jboss-app
     newTag: "1.0.0"
