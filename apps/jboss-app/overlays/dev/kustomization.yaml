@@ -2,8 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - ../../base
+- ../../base
 
 images:
-  - name: 192.168.56.50/hercey/jboss-app
-    newTag: "1.0.0"
+- name: 192.168.56.50/hercey/jboss-app
+  newName: 192.168.56.50/hercey/jboss-app
+  newTag: 1.0.164
