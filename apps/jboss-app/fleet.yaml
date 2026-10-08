@@ -1,0 +1,3 @@
+defaultNamespace: default
+kustomize:
+  dir: overlays/dev
