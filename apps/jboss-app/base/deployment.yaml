@@ -27,15 +27,15 @@ spec:
             limits:
               memory: "1Gi"
               cpu: "1000m"
-            livenessProbe:
-              httpGet:
-                path: /
-                port : 8080
-              initialDelaySeconds: 45
-              periodSeconds: 10
-            readinessProbe:
-              httpGet:
-                path: /
-                port: 8080
-              initialDelaySeconds: 30
-              periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 45
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 5
