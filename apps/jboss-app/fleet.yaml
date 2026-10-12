@@ -1,12 +1,9 @@
-yaml:
-kustomize:
-  dir: overlays/dev
-targetCustomizationMode: FirstMatch
+targetCustomizationMode: AllMatches
 targetCustomizations:
   - name: staging
     clusterSelector:
       matchLabels:
-        env: staging
+        staging-env: "true"
     kustomize:
       dir: overlays/staging
     namespace: staging
@@ -14,7 +11,7 @@ targetCustomizations:
   - name: prod
     clusterSelector:
       matchLabels:
-        env: staging
-      kustomize:
-        dir: overlays/prod
-      namespace: prod
+        prod-env: "true"
+    kustomize:
+      dir: overlays/prod
+    namespace: prod
