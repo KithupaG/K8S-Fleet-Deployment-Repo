@@ -7,4 +7,4 @@ resources:
 images:
 - name: 192.168.56.50/hercey/jboss-app
   newName: 192.168.56.50/hercey-staging/hercey
-  newTag: staging-1.0.10
+  newTag: staging-1.0.11
