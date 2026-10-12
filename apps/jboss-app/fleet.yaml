@@ -1,3 +1,20 @@
-defaultNamespace: default
+yaml:
 kustomize:
   dir: overlays/dev
+targetCustomizationMode: FirstMatch
+targetCustomizations:
+  - name: staging
+    clusterSelector:
+      matchLabels:
+        env: staging
+    kustomize:
+      dir: overlays/staging
+    namespace: staging
+
+  - name: prod
+    clusterSelector:
+      matchLabels:
+        env: staging
+      kustomize:
+        dir: overlays/prod
+      namespace: prod
