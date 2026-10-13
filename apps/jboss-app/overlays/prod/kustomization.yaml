@@ -3,4 +3,4 @@ kind: Kustomization
 images:
 - name: 192.168.56.50/hercey/jboss-app
   newName: 192.168.56.50/hercey/hercey
-  newTag: 1.0.9
+  newTag: 1.0.10
